@@ -11,11 +11,6 @@ int rows, cols, drones, deadline, load, products;
 vector<int> prod_weights;
 ofstream of;
 
-void LoadFromWarehouse(int drone_id, int warehouse_id, int item_id, int item_num)
-{
-    
-}
-
 struct location
 {
     int row, column;
@@ -288,7 +283,7 @@ int main(int argc, char ** argv)
         
     }
     
-    drone ds[drones];
+	vector<drone> ds(drones);
     
     while (deadline--)
     {
